@@ -127,4 +127,4 @@ The vast majority of commercially available high-capacity systems are built not 
 - reduces the internal voltage spread;
 - measurably increases the expected service life.
 
-For the planned systems, a conservative figure of **8000 full charge–discharge cycles** can be assumed. For LiFePO4 chemistry this is not an optimistic but a realistically achievable value, especially with active balancing and controlled operation. For a 192 kWh system, this means a total energy throughput of approximately **768 MWh** over the life cycle.
+For the planned systems, a conservative figure of **8000 full charge–discharge cycles** can be assumed. For LiFePO4 chemistry this is not an optimistic but a realistically achievable value, especially with active balancing and controlled operation. For a 192 kWh system, this means a total energy throughput of approximately **1536 MWh** over the life cycle.
