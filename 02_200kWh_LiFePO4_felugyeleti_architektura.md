@@ -127,4 +127,4 @@ A kereskedelmi forgalomban kapható nagy kapacitású rendszerek döntő többs�
 - csökkenti a belső feszültségszórást;
 - mérhetően növeli a várható élettartamot.
 
-A tervezett rendszereknél konzervatívan **8000 teljes töltési–kisütési ciklussal** lehet számolni. LiFePO4 kémia esetén ez nem optimista, hanem reálisan tartható érték, különösen aktív balanszolással és kontrollált üzemeltetéssel. Egy 192 kWh-s rendszer esetében ez összesen körülbelül **768 MWh** életciklus alatti energialeadást jelent.
+A tervezett rendszereknél konzervatívan **8000 teljes töltési–kisütési ciklussal** lehet számolni. LiFePO4 kémia esetén ez nem optimista, hanem reálisan tartható érték, különösen aktív balanszolással és kontrollált üzemeltetéssel. Egy 192 kWh-s rendszer esetében ez összesen körülbelül **1536 MWh** életciklus alatti energialeadást jelent.
