@@ -1,4 +1,4 @@
-**Language:** [Magyar](02_200kWh_LiFePO4_felugyeleti_architektura.md) | [English](02_200kWh_LiFePO4_felugyeleti_architektura.en.md)
+**Language / Nyelv:** [English](02_200kWh_LiFePO4_felugyeleti_architektura.en.md) · [Magyar](02_200kWh_LiFePO4_felugyeleti_architektura.md)
 
 # 200 kWh-s LiFePO4 energiatároló — adatgyűjtési és felügyeleti architektúra
 
@@ -43,14 +43,14 @@ Ez a felosztás ipari gyakorlat, auditálható és biztosításbarát.
 ### 5.1. Cellák és balanszer kapcsolata
 
 - Hardver: dedikált aktív balanszer modulok.
-- Kommunikáció: CAN buszon vagy RS-485 vonalon, Modbus RTU protokollal.
-- Indok: determinisztikus működés, zajtűrés, ipari szabvány.
+- Kapcsolat: a cellák közvetlen feszültség- és hőmérséklet-érzékelő vezetékeken csatlakoznak a balanszer modulokhoz; ezen a szinten nincs kommunikációs protokoll.
 
 A HMI közvetlenül nem avatkozik be ezen a szinten.
 
 ### 5.2. Balanszer és adatgyűjtő kapcsolata
 
-- Kommunikáció: CAN buszon vagy RS-485 vonalon, Modbus RTU protokollal.
+- Kommunikáció: RS-485 vonalon Modbus RTU protokollal, vagy CAN buszon (például CANopen vagy a gyártó saját protokollja).
+- Indok: determinisztikus működés, zajtűrés, ipari szabvány.
 - Feladatok: cellafeszültségek mérése, hőmérsékleti adatok, balanszolási állapot, hibák és események.
 
 **Ez az a réteg, ahol az adat hitelessé válik.**
@@ -71,7 +71,7 @@ A HMI közvetlenül nem avatkozik be ezen a szinten.
 
 **Alapelv:** a HMI nem védelmi eszköz és nem valós idejű balanszer.
 
-A HMI feladatai: adatgyűjtés, naplózás, vizualizáció, műszaki bizonyíték előállítása. Az aktív balanszolás külön hardveren fut; a HMI csak konfigurációt és vezérlést biztosít. Ez jogilag és műszakilag biztonságos megoldás.
+A HMI feladatai: adatgyűjtés, naplózás, vizualizáció, műszaki bizonyíték előállítása. Az aktív balanszolás külön hardveren fut; a HMI csak konfigurációt és vezérlést biztosít. Ez a szétválasztás műszakilag és a felelősségi határok szempontjából is tiszta megoldás.
 
 ## 7. Az előkészítő felépítés előnyei
 
@@ -119,7 +119,7 @@ A HMI feladatai: adatgyűjtés, naplózás, vizualizáció, műszaki bizonyíté
 
 ## 9. Szakmai megjegyzés: miért számít a cellaválogatás?
 
-A közel 200 kWh-s, körülbelül 400 V névleges feszültségű energiatároló rendszereknél a folyamatos 250 A-es terhelhetőség nem tekinthető piaci alapértéknek. Ilyen paraméterekkel rendelkező akkumulátorpakkok jellemzően csak egyedi megrendelésre érhetők el, és még akkor is ritkák.
+A közel 200 kWh-s, körülbelül 400 V névleges feszültségű energiatároló rendszereknél a folyamatos 250 A-es terhelhetőség nem tekinthető piaci alapértéknek. Tapasztalatunk szerint ilyen paraméterekkel rendelkező akkumulátorpakkok jellemzően csak egyedi megrendelésre érhetők el, és még akkor is ritkák.
 
 A kereskedelmi forgalomban kapható nagy kapacitású rendszerek döntő többsége nem válogatott cellákból vagy csomagokból, hanem gyártási tűréseken belüli, átlagos minőségű egységekből épül fel. A válogatott cellák alkalmazása:
 
@@ -127,4 +127,4 @@ A kereskedelmi forgalomban kapható nagy kapacitású rendszerek döntő többs�
 - csökkenti a belső feszültségszórást;
 - mérhetően növeli a várható élettartamot.
 
-A tervezett rendszereknél konzervatívan **8000 teljes töltési–kisütési ciklussal** lehet számolni. LiFePO4 kémia esetén ez nem optimista, hanem reálisan tartható érték, különösen aktív balanszolással és kontrollált üzemeltetéssel. Egy 192 kWh-s rendszer esetében ez összesen körülbelül **1536 MWh** életciklus alatti energialeadást jelent.
+A tervezett rendszereknél konzervatívan **8000 teljes töltési–kisütési ciklussal** lehet számolni. LiFePO4 kémia esetén ez nem optimista, hanem reálisan tartható érték, különösen aktív balanszolással és kontrollált üzemeltetéssel. Egy 192 kWh-s rendszer esetében ez összesen körülbelül **1536 MWh** életciklus alatti energialeadást jelent. A ciklusszám a cellagyártói adatlapon megadott feltételekhez kötött (kisütési mélység, hőmérséklet, áramterhelés, élettartam végi maradó kapacitás); ezektől eltérő üzemben kevesebb is lehet.

@@ -1,4 +1,4 @@
-**Language:** [Magyar](02_200kWh_LiFePO4_felugyeleti_architektura.md) | [English](02_200kWh_LiFePO4_felugyeleti_architektura.en.md)
+**Language / Nyelv:** [English](02_200kWh_LiFePO4_felugyeleti_architektura.en.md) · [Magyar](02_200kWh_LiFePO4_felugyeleti_architektura.md)
 
 # 200 kWh LiFePO4 Energy Storage — Data Acquisition and Monitoring Architecture
 
@@ -43,14 +43,14 @@ This partitioning follows industrial practice, is auditable and is insurance-fri
 ### 5.1 Link between cells and balancer
 
 - Hardware: dedicated active balancer modules.
-- Communication: over a CAN bus or an RS-485 line, using the Modbus RTU protocol.
-- Rationale: deterministic operation, noise immunity, industry standard.
+- Connection: the cells are connected to the balancer modules by direct voltage- and temperature-sensing wires; there is no communication protocol at this level.
 
 The HMI does not intervene directly at this level.
 
 ### 5.2 Link between balancer and data acquisition unit
 
-- Communication: over a CAN bus or an RS-485 line, using the Modbus RTU protocol.
+- Communication: over an RS-485 line using the Modbus RTU protocol, or over a CAN bus (for example CANopen or the manufacturer's own protocol).
+- Rationale: deterministic operation, noise immunity, industry standard.
 - Tasks: measurement of cell voltages, temperature data, balancing status, faults and events.
 
 **This is the layer where the data becomes authoritative.**
@@ -71,7 +71,7 @@ The HMI does not intervene directly at this level.
 
 **Basic principle:** the HMI is neither a protection device nor a real-time balancer.
 
-Tasks of the HMI: data acquisition, logging, visualisation, generation of technical evidence. Active balancing runs on separate hardware; the HMI only provides configuration and control. This is a legally and technically safe solution.
+Tasks of the HMI: data acquisition, logging, visualisation, generation of technical evidence. Active balancing runs on separate hardware; the HMI only provides configuration and control. This separation is a clean solution, both technically and in terms of responsibility boundaries.
 
 ## 7. Advantages of the preliminary design
 
@@ -119,7 +119,7 @@ With 120 cells in series, the nominal voltage of the system is 384 V. With five 
 
 ## 9. Professional note: why does cell matching matter?
 
-For energy storage systems of close to 200 kWh with a nominal voltage of about 400 V, a continuous load capability of 250 A cannot be regarded as a standard market value. Battery packs with such parameters are typically available only to custom order, and even then they are rare.
+For energy storage systems of close to 200 kWh with a nominal voltage of about 400 V, a continuous load capability of 250 A cannot be regarded as a standard market value. In our experience, battery packs with such parameters are typically available only to custom order, and even then they are rare.
 
 The vast majority of commercially available high-capacity systems are built not from matched (graded) cells or packs, but from average-quality units that lie within manufacturing tolerances. The use of matched cells:
 
@@ -127,4 +127,4 @@ The vast majority of commercially available high-capacity systems are built not 
 - reduces the internal voltage spread;
 - measurably increases the expected service life.
 
-For the planned systems, a conservative figure of **8000 full charge–discharge cycles** can be assumed. For LiFePO4 chemistry this is not an optimistic but a realistically achievable value, especially with active balancing and controlled operation. For a 192 kWh system, this means a total energy throughput of approximately **1536 MWh** over the life cycle.
+For the planned systems, a conservative figure of **8000 full charge–discharge cycles** can be assumed. For LiFePO4 chemistry this is not an optimistic but a realistically achievable value, especially with active balancing and controlled operation. For a 192 kWh system, this means a total energy throughput of approximately **1536 MWh** over the life cycle. The cycle count depends on the conditions stated in the cell manufacturer's datasheet (depth of discharge, temperature, current load, remaining capacity at end of life); under different operating conditions it may be lower.

@@ -1,4 +1,4 @@
-**Language:** [Magyar](01_Gazmotoros_energiakozpont_esettanulmany.md) | [English](01_Gazmotoros_energiakozpont_esettanulmany.en.md)
+**Language / Nyelv:** [English](01_Gazmotoros_energiakozpont_esettanulmany.en.md) · [Magyar](01_Gazmotoros_energiakozpont_esettanulmany.md)
 
 # Hőtermelésre optimalizált, gázüzemű belső égésű motoros energiaközpont kísérleti megvalósítása
 
@@ -8,11 +8,13 @@ Szerző: Almási Andor · Kanonikus műszaki változat: 2026. augusztus 5. · Pu
 
 > **Publikációs megjegyzés.** Ez a változat a kanonikus műszaki esettanulmányt tartalmazza. A rendszer fő szellemi értékét képviselő saját konstrukciós megoldás pontos működése, kialakítása és szabályozási elve nem nyilvános (lásd a 7.5. és a 16. fejezetet). A dokumentációs és kapcsolati melléklet nem része a publikus változatnak.
 
+> **Biztonsági megjegyzés.** A leírt berendezés egyedi kísérleti prototípus volt; ez a dokumentum nem építési vagy üzemeltetési útmutató. Gázüzemű berendezés építése, gázhálózatra kapcsolása és épületben való üzemeltetése szakképesítéshez, engedélyekhez és biztonsági előírásokhoz kötött. A 10. fejezetben leírt jelenségek azt is mutatják, hogy egy ilyen rendszerhez műszeres hőmérséklet-figyelés, hőmérséklet-határolás és érintésvédelem szükséges.
+
 ## Vezetői összefoglaló
 
 A jelen esettanulmány egy műhelyalapú, funkcionális újrahasznosítással létrehozott gázüzemű hő- és villamosenergia-termelő prototípust dokumentál.
 
-A rendszer alapját egy elektromos hajtású, gázüzemű Still targoncából kimentett, Volkswagen Polo eredetű, 1,6 literes, négyhengeres Ottó-motor és a hozzá tartozó 48 voltos villamos generátor képezte.
+A rendszer alapját egy gázüzemű, villamos hajtású (gáz-elektromos) Still targoncából kimentett, Volkswagen Polo eredetű, 1,6 literes, négyhengeres Ottó-motor és a hozzá tartozó 48 voltos villamos generátor képezte.
 
 A donor targonca belső vezetékhálózata egy korábbi elektromos kábel- és vezetéktűz következtében súlyosan károsodott. A járművet már nem állították helyre, de a belső égésű motor, a generátor és több kapcsolódó gépészeti részegység sértetlen és működőképes maradt. Ezek a részegységek bontás vagy beolvasztás helyett egy új energetikai rendszerben kaptak második funkcionális életciklust.
 
@@ -537,9 +539,9 @@ Ez a működés nem bizonyít többszörös termodinamikai hatásfokot, de igazo
 
 Egy üzemi próba során a 80 m²-nél nagyobb közösségi tér hőmérséklete emberileg nehezen elviselhető szintre emelkedett, és a helyiségben tartózkodók kérték a rendszer leállítását. Ez nem számszerű hőmérsékletmérés, de erős kvalitatív bizonyíték arra, hogy a radiátoros kör rövid idő alatt nagy hőteljesítményt adott le.
 
-### 10.2. Radiátorérintési sérülés
+### 10.2. Veszélyesen forró radiátorfelület
 
-A radiátor felületének kézi ellenőrzésekor az érintés égési sérülést vagy legalább azonnali, erős termikus sérülést okozott. Ebből egzakt radiátor-hőmérséklet nem vezethető le, de a megfigyelés igazolja, hogy a radiátor felülete nem egyszerűen meleg, hanem veszélyesen forró volt.
+A radiátor felületének kézi ellenőrzésekor az érintés azonnali, erős hőhatást okozott. Ebből egzakt radiátor-hőmérséklet nem vezethető le, de a megfigyelés igazolja, hogy a radiátor felülete nem egyszerűen meleg, hanem veszélyesen forró volt. Tanulság: a felületi hőmérsékletet műszerrel (például infravörös hőmérővel) kell ellenőrizni, nem kézi érintéssel.
 
 ### 10.3. Új radiátorok festékkárosodása
 
@@ -551,7 +553,7 @@ A festékkárosodás önmagában nem alkalmas pontos vízhőmérséklet meghatá
 
 ### 10.4. Alacsony zaj
 
-A motor nyitott térben, külön hangszigetelő burkolat nélkül működött, és a működés rendkívül csendes volt. Megfigyelési adatként rögzíthető, hogy egy csecsemő a motortól hozzávetőleg egyméteres távolságban, hordozóban zavartalanul aludt. Ez nem szabványos decibelmérés.
+A motor nyitott térben, külön hangszigetelő burkolat nélkül működött, és a működés rendkívül csendes volt. Ez a megfigyelés nem szabványos decibelmérésen alapul.
 
 A csendes működést valószínűleg együttesen okozta a kb. 400 fordulat/perces rendkívül alacsony fordulatszám, a négyhengeres kialakítás, a nagy lendítőtömeg, az egyenletes mechanikai terhelés, a stabil gázüzem és a magasabb frekvenciájú égési és mechanikai zajok hiánya.
 
@@ -624,7 +626,7 @@ A rendszert végül nem műszaki meghibásodás miatt bontottuk el. A további f
 
 ### Végső műszaki következtetés
 
-A rendelkezésre álló adatok alapján a prototípus működése termodinamikailag lehetséges, gépészetileg konzisztens, tapasztalatilag igazolt, több hónapos üzemben validált és energetikai szempontból életszerű. A berendezés helyes besorolása:
+A rendelkezésre álló adatok alapján a prototípus működése termodinamikailag lehetséges, gépészetileg konzisztens, két fűtési szezonon át, több hónapos üzemben a gyakorlatban kipróbált és energetikai szempontból életszerű. A berendezés helyes besorolása:
 
 > „Műhelyalapú, funkcionális újrahasznosítással létrehozott, extrém alacsony fordulatszámú, hőtermelésre optimalizált gázmotoros kapcsolt hő- és villamosenergia-termelő kísérleti prototípus.”
 

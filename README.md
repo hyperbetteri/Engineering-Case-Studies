@@ -1,44 +1,42 @@
-**Language:** [Magyar](README.md) | [English](README.en.md)
+**Language / Nyelv:** [English](README.md) · [Magyar](README.hu.md)
 
-# Mérnöki esettanulmányok / Engineering Case Studies
+# Engineering Case Studies / Mérnöki esettanulmányok
 
-**Almási Andor** — gyakorlati energetikai és teljesítményelektronikai fejlesztések dokumentációja: hőhasznosítás, energiatárolás, funkcionális újrahasznosítás.
+**Almási Andor** — documentation of practical energy and power-electronics developments: heat recovery, energy storage, functional reuse.
 
-> **English summary below.**
+## What is this repository about?
 
-## Miről szól ez a repó?
+These documents describe real systems that were built, or prepared for building, in a workshop. They share a common approach: first look at what is already available, and only newly acquire what genuinely cannot be substituted. The other shared principle is evidential discipline: every document treats **measured**, **observed**, **retrospectively calculated** and **estimated** data separately, and states explicitly what cannot be verified after the fact.
 
-Ezek a dokumentumok valós, műhelyben megépített vagy előkészített rendszereket írnak le. Közös bennük a szemlélet: először azt kell megnézni, mi áll már rendelkezésre, és csak azt kell újonnan beszerezni, ami valóban nem helyettesíthető. A másik közös elv a bizonyítéki fegyelem: minden dokumentum külön kezeli a **mért**, a **megfigyelt**, az **utólag számított** és a **becsült** adatokat, és kimondja, mi nem igazolható utólag.
+## Contents
 
-## Tartalom
-
-| # | Dokumentum | Röviden |
+| # | Document | In brief |
 |---|---|---|
-| 01 | [Gázmotoros energiaközpont — mérnöki esettanulmány](01_Gazmotoros_energiakozpont_esettanulmany.md) | Kiégett targoncából kimentett 1,6 literes motor, dugattyús gázkazánként üzemeltetve 400 fordulat/perc körül. Két fűtési szezon, kb. 450 m² fűtött terület, kb. 28 kW tüzelőanyag-bemenet, becsülten 18–24 kW hasznos hő. |
-| 02 | [200 kWh-s LiFePO4 energiatároló — felügyeleti architektúra](02_200kWh_LiFePO4_felugyeleti_architektura.md) | Rétegzett adatgyűjtési és felügyeleti terv (cella → BMS → gateway → HMI → külső világ), interfész-logika és 120S5P cellaszámítás. |
+| 01 | [Gas-engine energy centre — engineering case study](01_Gazmotoros_energiakozpont_esettanulmany.en.md) | A 1.6-litre engine rescued from a fire-damaged forklift, operated as a piston gas boiler at around 400 rpm. Two heating seasons, approx. 450 m² heated area, approx. 28 kW fuel input, an estimated 18–24 kW useful heat. |
+| 02 | [200 kWh LiFePO4 energy storage — monitoring architecture](02_200kWh_LiFePO4_felugyeleti_architektura.en.md) | Layered data-acquisition and monitoring design (cell → BMS → gateway → HMI → external world), interface logic and a 120S5P cell calculation. |
 
-## Mi nincs benne — szándékosan
+## What is not included — deliberately
 
-A dokumentumok a működési elvet, az energiamérleget és a felépítést mutatják be. A rendszerek fő szellemi értékét képviselő saját konstrukciós megoldások, a kalkulációk, készletadatok és üzleti részletek **nem** nyilvánosak.
+The documents present the operating principle, the energy balance and the design. The proprietary design solutions that represent the main intellectual value of the systems, as well as the calculations, inventory data and business details, are **not** public.
 
-## Kapcsolódó
+## Related
 
-- AI-munkafolyamat és validációs portfólió: [AI-Workflow-Validation-Portfolio](https://github.com/hyperbetteri/AI-Workflow-Validation-Portfolio)
-- AI-motor megfigyelések: [AI-Engine-Observations](https://github.com/hyperbetteri/AI-Engine-Observations)
-- Jogi AI-keretrendszer (bemutató): [LEGAL-RQV-Overview](https://github.com/hyperbetteri/LEGAL-RQV-Overview)
-- Holdi újrahasznosítási koncepciótanulmányok: [Lunar-Recycling-and-Terminator-Lab](https://github.com/hyperbetteri/Lunar-Recycling-and-Terminator-Lab)
+- AI workflow and validation portfolio: [AI-Workflow-Validation-Portfolio](https://github.com/hyperbetteri/AI-Workflow-Validation-Portfolio)
+- AI engine observations: [AI-Engine-Observations](https://github.com/hyperbetteri/AI-Engine-Observations)
+- Legal AI framework (overview): [LEGAL-RQV-Overview](https://github.com/hyperbetteri/LEGAL-RQV-Overview)
+- Lunar recycling concept studies: [Lunar-Recycling-and-Terminator-Lab](https://github.com/hyperbetteri/Lunar-Recycling-and-Terminator-Lab)
 
 ---
 
-## English summary
+## Summary
 
 Documentation of practical energy and power-electronics work, built in a workshop rather than a lab:
 
 - **Gas-engine heat and power centre (case study)** — a 1.6-litre four-cylinder engine and 48 V generator rescued from a fire-damaged forklift, run deliberately at about 400 rpm as a "piston gas boiler". It heated roughly 450 m² for two full winter seasons. Measured gas use of about 3 m³/h corresponds to about 28 kW fuel input; useful heat is conservatively estimated at 18–24 kW. The study strictly separates measured, observed, calculated and estimated values, and keeps the key proprietary design element undisclosed.
 - **200 kWh LiFePO4 storage — monitoring architecture** — a layered data-acquisition and supervision design (cell → BMS → gateway/PLC → HMI → external systems) with interface logic and a 120S5P cell calculation.
 
-The documents are written in Hungarian; full English translations are available ([README.en.md](README.en.md)). Proprietary design details, cost calculations, inventory and business data are deliberately omitted.
+The original documents are written in Hungarian; the full English translations are linked in the Contents table above. Proprietary design details, cost calculations, inventory and business data are deliberately omitted.
 
 ---
 
-© 2026 Almási Andor. Minden jog fenntartva. Forrásmegjelöléssel szabadon idézhető. / All rights reserved. Quotation with attribution is welcome.
+© 2026 Almási Andor. All rights reserved. Quotation with attribution is welcome.

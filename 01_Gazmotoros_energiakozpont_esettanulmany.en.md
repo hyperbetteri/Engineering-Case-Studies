@@ -1,4 +1,4 @@
-**Language:** [Magyar](01_Gazmotoros_energiakozpont_esettanulmany.md) | [English](01_Gazmotoros_energiakozpont_esettanulmany.en.md)
+**Language / Nyelv:** [English](01_Gazmotoros_energiakozpont_esettanulmany.en.md) · [Magyar](01_Gazmotoros_energiakozpont_esettanulmany.md)
 
 # Experimental Implementation of a Gas-Fired, Internal-Combustion-Engine Energy Centre Optimised for Heat Production
 
@@ -7,6 +7,8 @@
 Author: Almási Andor · Canonical technical version: 5 August 2026 · Public version
 
 > **Publication note.** This version contains the canonical technical case study. The exact operation, design and control principle of the proprietary design solution, which represents the main intellectual value of the system, are not public (see sections 7.5 and 16). The documentation and contact appendix is not part of the public version.
+
+> **Safety note.** The unit described was a one-off experimental prototype; this document is not a construction or operating guide. Building a gas-fired unit, connecting it to the gas network and operating it inside a building are subject to professional qualifications, permits and safety regulations. The phenomena described in section 10 also show that such a system requires instrumented temperature monitoring, temperature limiting and protection against contact with hot surfaces.
 
 ## Executive summary
 
@@ -537,9 +539,9 @@ This mode of operation does not prove a thermodynamic efficiency several times h
 
 During one operating trial, the temperature of the community room of more than 80 m² rose to a level that was hard for people to bear, and the occupants asked for the system to be shut down. This is not a numerical temperature measurement, but it is strong qualitative evidence that the radiator circuit delivered high heat output within a short time.
 
-### 10.2 Injury from touching a radiator
+### 10.2 Dangerously hot radiator surface
 
-When the radiator surface was checked by hand, touching it caused a burn, or at least an immediate, severe thermal injury. No exact radiator temperature can be derived from this, but the observation confirms that the radiator surface was not simply warm but dangerously hot.
+When the radiator surface was checked by hand, touching it produced an immediate, intense heat effect. No exact radiator temperature can be derived from this, but the observation confirms that the radiator surface was not simply warm but dangerously hot. Lesson learned: surface temperature should be checked with an instrument (for example an infrared thermometer), not by touch.
 
 ### 10.3 Paint damage on new radiators
 
@@ -551,7 +553,7 @@ Paint damage on its own is not suitable for determining an exact water temperatu
 
 ### 10.4 Low noise
 
-The engine operated in an open space, without a separate acoustic enclosure, and its operation was extremely quiet. It can be recorded as an observation that an infant slept undisturbed in a baby carrier at a distance of approximately one metre from the engine. This is not a standardised decibel measurement.
+The engine operated in an open space, without a separate acoustic enclosure, and its operation was extremely quiet. This observation is not based on a standardised decibel measurement.
 
 The quiet operation was probably due to a combination of the extremely low speed of about 400 rpm, the four-cylinder design, the large flywheel mass, the uniform mechanical load, the stable gas operation and the absence of higher-frequency combustion and mechanical noise.
 
@@ -624,7 +626,7 @@ The system was eventually dismantled for reasons other than technical failure. A
 
 ### Final technical conclusion
 
-Based on the available data, the operation of the prototype is thermodynamically possible, mechanically consistent, empirically confirmed, validated over several months of operation and realistic from an energy standpoint. The correct classification of the unit:
+Based on the available data, the operation of the prototype is thermodynamically possible, mechanically consistent, proven in practice over several months of operation across two heating seasons, and realistic from an energy standpoint. The correct classification of the unit:
 
 > "An experimental gas-engine combined heat and power prototype, built in a workshop through functional reuse, running at extremely low speed and optimised for heat production."
 
