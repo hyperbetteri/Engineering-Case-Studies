@@ -1,3 +1,5 @@
+**Language:** [Magyar](02_200kWh_LiFePO4_felugyeleti_architektura.md) | [English](02_200kWh_LiFePO4_felugyeleti_architektura.en.md)
+
 # 200 kWh-s LiFePO4 energiatároló — adatgyűjtési és felügyeleti architektúra
 
 **Előkészítő műszaki terv**

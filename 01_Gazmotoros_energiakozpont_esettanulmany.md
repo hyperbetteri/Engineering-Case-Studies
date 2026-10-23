@@ -1,3 +1,5 @@
+**Language:** [Magyar](01_Gazmotoros_energiakozpont_esettanulmany.md) | [English](01_Gazmotoros_energiakozpont_esettanulmany.en.md)
+
 # Hőtermelésre optimalizált, gázüzemű belső égésű motoros energiaközpont kísérleti megvalósítása
 
 **Mérnöki esettanulmány**
