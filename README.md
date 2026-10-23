@@ -1,3 +1,5 @@
+**Language:** [Magyar](README.md) | [English](README.en.md)
+
 # Mérnöki esettanulmányok / Engineering Case Studies
 
 **Almási Andor** — gyakorlati energetikai és teljesítményelektronikai fejlesztések dokumentációja: hőhasznosítás, energiatárolás, funkcionális újrahasznosítás.
