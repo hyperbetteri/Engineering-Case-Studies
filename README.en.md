@@ -23,6 +23,8 @@ The documents present the operating principle, the energy balance and the design
 
 - AI workflow and validation portfolio: [AI-Workflow-Validation-Portfolio](https://github.com/hyperbetteri/AI-Workflow-Validation-Portfolio)
 - AI engine observations: [AI-Engine-Observations](https://github.com/hyperbetteri/AI-Engine-Observations)
+- Legal AI framework (overview): [LEGAL-RQV-Overview](https://github.com/hyperbetteri/LEGAL-RQV-Overview)
+- Lunar recycling concept studies: [Lunar-Recycling-and-Terminator-Lab](https://github.com/hyperbetteri/Lunar-Recycling-and-Terminator-Lab)
 
 ---
 

@@ -25,6 +25,8 @@ A dokumentumok a működési elvet, az energiamérleget és a felépítést muta
 
 - AI-munkafolyamat és validációs portfólió: [AI-Workflow-Validation-Portfolio](https://github.com/hyperbetteri/AI-Workflow-Validation-Portfolio)
 - AI-motor megfigyelések: [AI-Engine-Observations](https://github.com/hyperbetteri/AI-Engine-Observations)
+- Jogi AI-keretrendszer (bemutató): [LEGAL-RQV-Overview](https://github.com/hyperbetteri/LEGAL-RQV-Overview)
+- Holdi újrahasznosítási koncepciótanulmányok: [Lunar-Recycling-and-Terminator-Lab](https://github.com/hyperbetteri/Lunar-Recycling-and-Terminator-Lab)
 
 ---
 
@@ -35,7 +37,7 @@ Documentation of practical energy and power-electronics work, built in a worksho
 - **Gas-engine heat and power centre (case study)** — a 1.6-litre four-cylinder engine and 48 V generator rescued from a fire-damaged forklift, run deliberately at about 400 rpm as a "piston gas boiler". It heated roughly 450 m² for two full winter seasons. Measured gas use of about 3 m³/h corresponds to about 28 kW fuel input; useful heat is conservatively estimated at 18–24 kW. The study strictly separates measured, observed, calculated and estimated values, and keeps the key proprietary design element undisclosed.
 - **200 kWh LiFePO4 storage — monitoring architecture** — a layered data-acquisition and supervision design (cell → BMS → gateway/PLC → HMI → external systems) with interface logic and a 120S5P cell calculation.
 
-The documents are in Hungarian. Proprietary design details, cost calculations, inventory and business data are deliberately omitted.
+The documents are written in Hungarian; full English translations are available ([README.en.md](README.en.md)). Proprietary design details, cost calculations, inventory and business data are deliberately omitted.
 
 ---
 
