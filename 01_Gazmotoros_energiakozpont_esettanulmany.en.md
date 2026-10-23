@@ -610,7 +610,7 @@ High heat utilisation is supported by the following combination of circumstances
 
 The prototype was used over two winter seasons. The first heating period lasted approximately from the end of October to March; operation was repeated the following winter. Individual runs included continuous operation of a few hours, several hours and several tens of hours. The system was not a one-off demonstration or a trial lasting a few minutes.
 
-The system was eventually dismantled, not because of a technical failure. At that time there was no external interest in further development and exploitation.
+The system was eventually dismantled for reasons other than technical failure. At that time there was no external interest in further development and exploitation.
 
 ## 14. Technical classification
 
